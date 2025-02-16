@@ -1,13 +1,15 @@
-package capstone;
+package com.xyloflo.capstone;
 
-import org.junit.jupiter.api.Test; // JUnit 5 Test annotation
-import org.springframework.boot.test.context.SpringBootTest; // Spring Boot Test annotation
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-public class MyCustomAppApplicationTests {
+@ActiveProfiles("test")
+class MyCustomAppApplicationTests {
 
     @Test
     void contextLoads() {
-        // Test to ensure the application context loads successfully
+        // This empty test method verifies that the Spring application context loads successfully
     }
 }
